@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/back.png" />
+        <ignore path="src/main/res/drawable/background_five.jpg" />
+        <ignore path="src/main/res/drawable/background_four.jpg" />
+        <ignore path="src/main/res/drawable/background_one.jpg" />
+        <ignore path="src/main/res/drawable/background_seven.jpg" />
+        <ignore path="src/main/res/drawable/background_six.jpg" />
+        <ignore path="src/main/res/drawable/background_three.jpg" />
+        <ignore path="src/main/res/drawable/background_two.jpg" />
+    </issue>
+</lint>

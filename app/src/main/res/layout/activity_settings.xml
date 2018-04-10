@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tictactoe.Settings">
+
+    <View
+        android:id="@+id/decorative_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:alpha="0.4"
+        android:background="@drawable/background_four"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="41dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/back"
+        android:onClick="goBack"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/change_size"
+        android:layout_width="321dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:text="@string/change_size_of_the_board"
+        android:textAppearance="@style/change_size_of_the_board" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_box_one"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="187dp"
+            android:background="#FFFFFF"
+            android:onClick="chooseBoard"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/size_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="190dp"
+            android:gravity="center_horizontal"
+            android:text="@string/size_three"
+            android:textAppearance="@style/sizes"
+            tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_box_two"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="41dp"
+                android:background="#FFFFFF"
+                android:onClick="chooseBoard"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/size_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="44dp"
+                android:gravity="center_horizontal"
+                android:text="@string/size_four"
+                android:textAppearance="@style/sizes"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_box_three"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="41dp"
+                android:background="#FFFFFF"
+                android:onClick="chooseBoard"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/size_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="44dp"
+                android:gravity="center_horizontal"
+                android:text="@string/size_five"
+                android:textAppearance="@style/sizes"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continue_main"
+        android:layout_width="220dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/buttons"
+        android:elevation="4dp"
+        android:text="@string/continue_button"
+        android:textAppearance="@style/continue_button" />
+
+</android.widget.RelativeLayout>

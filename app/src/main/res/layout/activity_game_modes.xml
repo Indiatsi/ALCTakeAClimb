@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tictactoe.GameModes">
+
+    <View
+        android:id="@+id/background_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:alpha="0.4"
+        android:background="@drawable/background_one"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="41dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/back"
+        tools:ignore="RtlHardcoded"
+        android:onClick="goBack"/>
+
+    <Button
+        android:id="@+id/single_player"
+        android:layout_width="256dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="181dp"
+        android:background="@drawable/buttons2"
+        android:elevation="4dp"
+        android:text="@string/single_player"
+        android:onClick="openSinglePlayer"
+        android:textAppearance="@style/single_player" />
+
+    <Button
+        android:id="@+id/multi_player"
+        android:layout_width="256dp"
+        android:layout_height="46dp"
+        android:layout_alignLeft="@id/single_player"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@id/single_player"
+        android:layout_below="@id/single_player"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="324dp"
+        android:background="@drawable/buttons2"
+        android:onClick="openMultiPlayer"
+        android:elevation="4dp"
+        android:text="@string/multi_player"
+        android:textAppearance="@style/multi_player" />
+
+    <Button
+        android:id="@+id/continue_game_modes"
+        android:layout_width="220dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="475dp"
+        android:background="@drawable/buttons"
+        android:elevation="4dp"
+        android:text="@string/continue_button"
+        android:textAppearance="@style/continue_button" />
+
+
+</android.widget.RelativeLayout>

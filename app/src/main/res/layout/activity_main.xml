@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tictactoe.MainActivity">
+
+    <View
+        android:id="@+id/background_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:alpha="0.4"
+        android:background="@drawable/background_one"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/enter_your_name"
+        android:layout_width="256dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="381dp"
+        android:background="@drawable/textview"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:inputType="text|textPersonName"
+        android:text="@string/enter_your_name"
+        android:textAppearance="@style/enter_your_name"/>
+    
+    <Button
+        android:id="@+id/continue_main"
+        android:layout_width="220dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="475dp"
+        android:background="@drawable/buttons"
+        android:elevation="4dp"
+        android:text="@string/continue_button"
+        android:textAppearance="@style/continue_button" />
+
+</android.widget.RelativeLayout>

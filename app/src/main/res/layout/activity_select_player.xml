@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tictactoe.SelectPlayer">
+
+    <View
+        android:id="@+id/background_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:alpha="0.4"
+        android:background="@drawable/background_one"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="41dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/back"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:id="@+id/x_player"
+        android:layout_width="143dp"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/x_player"
+        android:elevation="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="144dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:text="@string/or"
+        android:textAppearance="@style/or"
+        android:elevation="4dp"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:id="@+id/o_player"
+        android:layout_width="143dp"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="404dp"
+        android:background="@drawable/o_player"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/continue_game_modes"
+        android:layout_width="156dp"
+        android:layout_height="46dp"
+        android:layout_alignLeft="@+id/o_player"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/o_player"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/buttons"
+        android:elevation="4dp"
+        android:text="@string/play"
+        android:textAppearance="@style/play_button" />
+
+</android.widget.RelativeLayout>

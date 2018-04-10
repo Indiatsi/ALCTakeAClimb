@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tictactoe.GameOver">
+
+    <View
+        android:id="@+id/background_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:alpha="0.2"
+        android:background="@drawable/background_three"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/game_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/game_over"
+        android:textAppearance="@style/game_over"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_over"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/player_one"
+                android:textAppearance="@style/players" />
+
+            <TextView
+                android:id="@+id/player_one_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:text="@string/score"
+                android:textAppearance="@style/scores" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/player_two"
+                android:textAppearance="@style/players" />
+
+            <TextView
+                android:id="@+id/player_two_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="24dp"
+                android:text="@string/score"
+                android:textAppearance="@style/scores" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:gravity="center_horizontal"
+        android:text="@string/result"
+        android:textAppearance="@style/result" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/group_2"
+        android:layout_marginLeft="22dp"
+        android:background="@drawable/buttons"
+        android:text="@string/reset"
+        android:textAppearance="@style/reset"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/group_2"
+        android:layout_width="145dp"
+        android:layout_height="46dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/buttons"
+        android:text="@string/new_game"
+        android:textAppearance="@style/new_game"
+        tools:ignore="RtlHardcoded" />
+
+</android.widget.RelativeLayout>
